@@ -28,8 +28,6 @@ class Song
   end
   
   def self.genre_count
-    genre_count = {}
-    
-      
+    @@genres.uniq.map { |x| [x, arr.count(x)] }.to_h
   end
 end
